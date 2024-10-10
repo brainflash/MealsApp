@@ -19,8 +19,8 @@ class MealMapper {
 			instructions: response.strInstructions ?? "",
 			ingredients: ingredientsAndMeasures.ingredients,
 			measures: ingredientsAndMeasures.measures,
-			thumb: URL(string: response.strMealThumb ?? "") ?? nil,
-			youTube: URL(string: response.strYoutube ?? "") ?? nil,
+			thumb: URL(string: response.strMealThumb ?? ""),
+			youTube: URL(string: response.strYoutube ?? ""),
 			source: response.strSource
 		)
 	}

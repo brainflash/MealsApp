@@ -19,6 +19,9 @@ struct CategoryThumbView: View {
 			} placeholder: {
 				ProgressView()
 					.background(Color.gray.opacity(0.2))
+					.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+					.aspectRatio(nil, contentMode: .fit)
+					.clipped()
 			}
 			.accessibilityLabel("\(category.displayText) category image")
 			

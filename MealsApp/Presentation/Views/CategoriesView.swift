@@ -29,7 +29,7 @@ struct CategoriesView: View {
 					GridItem(.fixed(itemWidth))
 				]
 				
-				ScrollView {
+				ScrollView(showsIndicators: false) {
 					LazyVGrid(columns: columns, spacing: 16) {
 						ForEach(viewModel.categories, id: \.id) { category in
 							CategoryThumbView(category: category)

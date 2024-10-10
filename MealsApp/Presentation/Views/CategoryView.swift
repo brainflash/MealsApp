@@ -17,7 +17,7 @@ struct CategoryView: View {
 	]
 	
 	var body: some View {
-		ScrollView {
+		ScrollView(showsIndicators: false) {
 			LazyVGrid(columns: columns, spacing: 16) {
 				ForEach(viewModel.results, id: \.id) { result in
 					FilterThumbView(result: result)
